@@ -10,7 +10,7 @@ inv = lambda l : [(not i) for i in l]
 
 median = lambda l : sorted(l)[int(len(l)/2)]
 
-def CIADAD_detect(data,do):
+def CIADAD_detect(data,do="anomalies"):
   if do == "anomalies": 
     return CIADAD_detect_INTERNAL(data)
   elif do == "usual":
